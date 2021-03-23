@@ -28,9 +28,14 @@ h1 {
     max-width: 800px;
 }
 
+.filter:focus {
+    outline: none;
+}
+
 .filter {
     width: 100%;
     padding: 12px;
+    font-size: 16px;
 }
 
 .post {
@@ -75,14 +80,14 @@ h1 {
 }
 
 .loader {
-    /* opacity: 0%; */
+    opacity: 0%;
     display:flex;
     position: fixed;
     bottom: 50px;
     transition: opacity 0.3s ease-in;
 }
 
-.loader .show {
+.loader.show {
     opacity: 1;
 }
 
@@ -111,13 +116,14 @@ h1 {
         transform: translateY(0);
     }
 
-    50% {
-        /* bonus.) At 50% of this timeline, I made it cycle through a color*/
-        background-color: #f3d00ae1;
+    50% { 
+        /* bonus.) At 50% of this timeline, I made it cycle through a color */
+         background-color: #f3d00ae1;
     }
 
     50% {
-        /* 4.) At 50% of this timeline, we want them to go up! */
+         /* 4.) At 50% of this timeline, we want them to go up!  */
         transform: translateY(-10px);
     }
 }
+
